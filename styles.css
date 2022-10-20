@@ -1,0 +1,200 @@
+/* font-family: "Figtree", sans-serif;
+font-family: "Rozha One", serif; */
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #faffff;
+  font-family: "Figtree", sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* display: flex; */
+  flex-direction: column;
+}
+p {
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: #ff502d;
+  color: black;
+  padding: 20px;
+  border-radius: 50px;
+  text-align: left;
+  font-family: "Rozha One", serif;
+}
+
+.icon {
+  scale: 2px;
+}
+/* ⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡⚡ */
+.container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  flex: 1;
+}
+
+.sub-container {
+  /* display: flex; */
+  flex-wrap: wrap;
+  margin: 140px;
+}
+.promotion {
+  position: relative;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  background-color: #ff502d;
+  flex: 1;
+  height: 100vh;
+  width: 100vw;
+  margin-left: 10px;
+  flex: 1/3;
+}
+
+.logo-main {
+  align-items: center;
+  margin: 2rem;
+}
+
+.navbar a {
+  color: #003500;
+  font-size: 18px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.navbar a:focus {
+  color: #ff502d;
+  text-decoration: overline;
+}
+.navbar a:hover {
+  color: #6621f1;
+  text-decoration: overline;
+}
+
+h1 {
+  font-family: "Rozha One", serif;
+  font-size: 64px;
+  /* display: flex; */
+  justify-content: center;
+  width: 75%;
+  align-self: center;
+  margin: 2rem 12%;
+  color: #6621f1;
+  /* line-height: 1; */
+}
+h3 {
+  text-align: center;
+  display: block;
+  font-family: "Rozha One", serif;
+  font-size: 56px;
+
+  color: #6621f1;
+}
+
+.space {
+  color: #ff502d;
+}
+@keyframes float-inverse {
+  from {
+    transform: translate(0, 0px);
+  }
+  to {
+    transform: translate(0, -15px);
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translate(0, 0px);
+  }
+  to {
+    transform: translate(0, 15px);
+  }
+}
+.promotion img {
+  justify-content: center;
+  width: 70%;
+}
+
+.promotion p {
+  /* color: rgb(253, 253, 253); */
+  position: absolute;
+  bottom: 20px;
+  left: 17%;
+}
+
+/* Info cards */
+.section {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+.card {
+  width: 350px;
+  height: 450px;
+  background-color: #060606;
+  margin: 30px;
+  border-radius: 30px;
+  position: relative;
+  animation: float 2s infinite alternate linear;
+}
+
+.card2 {
+  animation: float-inverse 2s infinite alternate linear;
+}
+
+.card-img {
+  object-fit: cover;
+
+  border-radius: 30px;
+  /* scale: 1.2; */
+  width: 350px;
+  height: 450px;
+
+  /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+}
+
+.card-p {
+  color: wheat;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  border-radius: 25px;
+  /* visibility: hidden; */
+}
+
+.card-p:hover {
+  visibility: visible;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  color: #ff502d;
+  border-top: 2px solid;
+}
+footer a {
+  color: #ff502d;
+  margin-right: 20px;
+}
+
+.footer-logo {
+  margin: 20px;
+}
+
+.light {
+  color: rgb(160, 160, 160);
+  font-size: 12px;
+  text-align: left;
+}
